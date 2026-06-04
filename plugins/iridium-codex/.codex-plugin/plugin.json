@@ -1,0 +1,29 @@
+{
+  "name": "iridium-codex",
+  "version": "1.0.0",
+  "description": "Connect Codex to your private Iridium advisor memory.",
+  "author": {
+    "name": "Iridium",
+    "url": "https://iridium.ai"
+  },
+  "homepage": "https://iridium.ai/codex",
+  "repository": "https://github.com/Jdashford/iridium-codex-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Iridium for Codex",
+    "shortDescription": "Use your private advisor memory in Codex.",
+    "longDescription": "Connect Codex to your Iridium advisor through secure OAuth and MCP. The plugin contains no private memory or setup credentials.",
+    "developerName": "Iridium",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://iridium.ai",
+    "privacyPolicyURL": "https://iridium.ai/privacy",
+    "termsOfServiceURL": "https://iridium.ai/terms",
+    "defaultPrompt": [
+      "Use my Iridium advisor to help me plan the next step.",
+      "Ask my advisor what context I should consider before making this decision."
+    ],
+    "brandColor": "#2563EB"
+  }
+}

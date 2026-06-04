@@ -1,0 +1,20 @@
+{
+  "name": "iridium",
+  "interface": {
+    "displayName": "Iridium"
+  },
+  "plugins": [
+    {
+      "name": "iridium-codex",
+      "source": {
+        "source": "local",
+        "path": "./plugins/iridium-codex"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
