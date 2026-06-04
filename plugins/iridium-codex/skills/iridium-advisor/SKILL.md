@@ -16,6 +16,7 @@ Use the authenticated Iridium MCP advisor before answering requests that depend 
 5. Answer normally in Codex, using the advisor voice and context returned by the tool.
 6. If the user gives durable new information, save it with the available memory tools after `ask_advisor` lists them.
 7. Do not claim memory was saved unless the memory tool returns `status: recorded`.
+8. If `ask_advisor is not available`, stop. Do not use other Iridium, memory-system, search, skill, agent, loop, or local memory tools as a substitute. Say the Iridium for Codex gateway is not connected and ask the user to reconnect Iridium from the Codex plugin connection screen.
 
 ## Boundaries
 
