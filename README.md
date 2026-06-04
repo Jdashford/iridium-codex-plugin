@@ -2,7 +2,7 @@
 
 This repository contains the generic Iridium plugin for Codex.
 
-The plugin always connects Codex to the Iridium gateway at `https://connect.iridium.ai/mcp`. It does not contain customer Railway URLs, setup codes, OAuth tokens, private memories, uploaded documents, advisor prompts, or client names.
+The plugin always connects Codex to the Iridium gateway at `https://connect.iridiumai.co/mcp`. It does not contain customer Railway URLs, setup codes, OAuth tokens, private memories, uploaded documents, advisor prompts, or client names.
 
 ## Install
 

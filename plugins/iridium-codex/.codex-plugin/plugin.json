@@ -1,12 +1,12 @@
 {
   "name": "iridium-codex",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Connect Codex to your private Iridium advisor memory.",
   "author": {
     "name": "Iridium",
-    "url": "https://iridium.ai"
+    "url": "https://iridiumai.co"
   },
-  "homepage": "https://iridium.ai/codex",
+  "homepage": "https://iridiumai.co/codex",
   "repository": "https://github.com/Jdashford/iridium-codex-plugin",
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
@@ -17,9 +17,9 @@
     "developerName": "Iridium",
     "category": "Productivity",
     "capabilities": ["Read", "Write"],
-    "websiteURL": "https://iridium.ai",
-    "privacyPolicyURL": "https://iridium.ai/privacy",
-    "termsOfServiceURL": "https://iridium.ai/terms",
+    "websiteURL": "https://iridiumai.co",
+    "privacyPolicyURL": "https://iridiumai.co/privacy",
+    "termsOfServiceURL": "https://iridiumai.co/terms",
     "defaultPrompt": [
       "Use my Iridium advisor to help me plan the next step.",
       "Ask my advisor what context I should consider before making this decision."
