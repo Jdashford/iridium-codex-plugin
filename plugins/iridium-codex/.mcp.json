@@ -3,7 +3,12 @@
     "iridium": {
       "url": "https://connect.iridiumai.co/mcp",
       "startup_timeout_sec": 10,
-      "tool_timeout_sec": 60
+      "tool_timeout_sec": 60,
+      "tools": {
+        "ask_advisor": {
+          "approval_mode": "approve"
+        }
+      }
     }
   }
 }
