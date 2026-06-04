@@ -18,9 +18,10 @@ Use the authenticated Iridium MCP advisor before answering requests that depend 
 7. Do not claim memory was saved unless the memory tool returns `status: recorded`.
 8. If `ask_advisor is not available`, stop. Do not use other Iridium, memory-system, search, skill, agent, loop, or local memory tools as a substitute. Generate an authentication link for the user:
    - If terminal tools are available, run `codex mcp login iridium` in an interactive shell, capture the printed `https://connect.iridiumai.co/oauth/authorize?...` URL, and show that URL to the user.
-   - Leave that login command running while the user opens the URL, enters their one-time setup code, and completes OAuth. Stop the command only after the user completes or abandons authentication.
+   - Leave that login command running while the user opens the URL, enters their one-time setup code, and completes OAuth. Do not end the Codex turn, stop the command, or reuse an old authorization URL until the login command reports success or failure.
    - If terminal tools are not available, tell the user to run `codex mcp login iridium` locally and open the Iridium authorization link it prints. Do not send them to a bare `/oauth/authorize` URL because it cannot authenticate without Codex's generated OAuth parameters.
-   - After authentication, ask the user to retry the advisor request in a new Codex turn or thread so `ask_advisor` can be exposed.
+   - If the browser redirects to `127.0.0.1` and says `127.0.0.1 refused` or `ERR_CONNECTION_REFUSED`, the local Codex login listener was not running. The one-time setup code has likely been consumed by the gateway, so tell the user to generate a fresh setup code and repeat the login with a newly started `codex mcp login iridium` command.
+   - After authentication, ask the user to start a new Codex thread with Iridium for Codex selected. Do not keep trying in the same thread if `ask_advisor` is still missing, because Codex may not hot-load newly authenticated MCP tools into an already-running thread.
 
 ## Boundaries
 
