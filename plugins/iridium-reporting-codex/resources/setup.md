@@ -1,0 +1,7 @@
+# Iridium Reporting for Codex
+
+Install this plugin from the Iridium marketplace.
+
+After installation, Codex will ask you to connect Iridium Reporting. Finish the setup flow from your private Iridium setup page and authenticate only on Iridium screens.
+
+If Codex says Iridium Reporting is not connected, run `codex mcp login iridium_reporting` and open the Iridium authorization link it prints. Keep the command running until the browser finishes authentication. If the browser ends on `127.0.0.1` with a connection-refused error, start over with a fresh setup code and a newly started login command.

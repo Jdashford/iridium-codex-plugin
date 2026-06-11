@@ -1,0 +1,29 @@
+{
+  "name": "iridium-reporting-codex",
+  "version": "1.0.0",
+  "description": "Connect Codex to Iridium business reporting for an account.",
+  "author": {
+    "name": "Iridium",
+    "url": "https://iridiumai.co"
+  },
+  "homepage": "https://iridiumai.co/codex/reporting",
+  "repository": "https://github.com/Jdashford/iridium-codex-plugin",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Iridium Reporting for Codex",
+    "shortDescription": "Create account-scoped business intelligence reports in Codex.",
+    "longDescription": "Connect Codex to an Iridium Reporting Agent through secure OAuth and MCP. The plugin contains no private account data or setup credentials.",
+    "developerName": "Iridium",
+    "category": "Productivity",
+    "capabilities": ["Read"],
+    "websiteURL": "https://iridiumai.co",
+    "privacyPolicyURL": "https://iridiumai.co/privacy",
+    "termsOfServiceURL": "https://iridiumai.co/terms",
+    "defaultPrompt": [
+      "Use Iridium Reporting to prepare a business update for this account.",
+      "Ask Iridium Reporting what changed across account activity and intelligence."
+    ],
+    "brandColor": "#111111"
+  }
+}
