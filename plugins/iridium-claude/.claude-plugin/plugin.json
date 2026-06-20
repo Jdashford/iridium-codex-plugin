@@ -1,13 +1,13 @@
 {
   "name": "iridium-claude",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Connect Claude Code to your private Iridium advisor memory.",
   "author": {
     "name": "Iridium",
     "url": "https://iridiumai.co"
   },
   "homepage": "https://iridiumai.co/claude",
-  "repository": "https://github.com/Jdashford/iridium-codex-plugin",
+  "repository": "https://github.com/Jdashford/iridium-claude-plugin",
   "license": "Proprietary",
   "keywords": ["advisor", "memory", "mcp", "productivity"],
   "skills": "./skills/",
