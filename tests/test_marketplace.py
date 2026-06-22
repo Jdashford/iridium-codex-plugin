@@ -83,7 +83,7 @@ def test_iridium_codex_plugin_contains_no_private_or_deployment_data():
     all_text = plugin_text_assets(PLUGIN_ROOT)
 
     assert manifest["name"] == "iridium-codex"
-    assert manifest["version"] == "1.0.8"
+    assert manifest["version"] == "1.0.10"
     assert manifest["repository"] == "https://github.com/Jdashford/iridium-codex-plugin"
     assert manifest["mcpServers"] == "./.mcp.json"
     assert manifest["skills"] == "./skills/"
@@ -115,7 +115,8 @@ def test_iridium_codex_plugin_contains_no_private_or_deployment_data():
     assert "before starting OAuth login" in skill
     assert "codex mcp login iridium" in skill
     assert "https://connect.iridiumai.co/oauth/authorize?" in skill
-    assert "Leave that login command running" in skill
+    assert "Do not block inside an interactive login loop" in skill
+    assert "report the local Codex error plainly and stop" in skill
     assert "127.0.0.1 refused" in skill
     assert "fresh setup code" in skill
     assert "new Codex thread" in skill
