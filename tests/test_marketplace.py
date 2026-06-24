@@ -83,7 +83,7 @@ def test_iridium_codex_plugin_contains_no_private_or_deployment_data():
     all_text = plugin_text_assets(PLUGIN_ROOT)
 
     assert manifest["name"] == "iridium-codex"
-    assert manifest["version"] == "1.0.10"
+    assert manifest["version"] == "1.0.11"
     assert manifest["repository"] == "https://github.com/Jdashford/iridium-codex-plugin"
     assert manifest["mcpServers"] == "./.mcp.json"
     assert manifest["skills"] == "./skills/"
@@ -109,6 +109,13 @@ def test_iridium_codex_plugin_contains_no_private_or_deployment_data():
     assert "If neither document metadata tool is exposed" in skill
     assert "task `recent_documents` and the requested limit" in skill
     assert "Do not rely on server inference from raw text" in skill
+    assert "remember_client_document_tool" in skill
+    assert "remember_client_document_parts_tool" in skill
+    assert "100,000 characters" in skill
+    assert "same original filename" in skill
+    assert "total_chars" in skill
+    assert "content_sha256" in skill
+    assert "Do not invent part filenames" in skill
     assert "ask_advisor is not available" in skill
     assert "tool discovery" in skill
     assert "tool_search" in skill
@@ -137,7 +144,7 @@ def test_iridium_claude_plugin_is_native_and_contains_no_private_or_deployment_d
     all_text = plugin_text_assets(CLAUDE_PLUGIN_ROOT)
 
     assert manifest["name"] == "iridium-claude"
-    assert manifest["version"] == "1.0.1"
+    assert manifest["version"] == "1.0.2"
     assert manifest["repository"] == "https://github.com/Jdashford/iridium-claude-plugin"
     assert manifest["skills"] == "./skills/"
     assert manifest["mcpServers"] == "./.mcp.json"
@@ -166,6 +173,13 @@ def test_iridium_claude_plugin_is_native_and_contains_no_private_or_deployment_d
     assert "If neither document metadata tool is exposed" in skill
     assert "task `recent_documents` and the requested limit" in skill
     assert "Do not rely on server inference from raw text" in skill
+    assert "remember_client_document_tool" in skill
+    assert "remember_client_document_parts_tool" in skill
+    assert "100,000 characters" in skill
+    assert "same original filename" in skill
+    assert "total_chars" in skill
+    assert "content_sha256" in skill
+    assert "Do not invent part filenames" in skill
 
 
 def test_iridium_reporting_claude_plugin_has_separate_identity_and_no_private_data():
